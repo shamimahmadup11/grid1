@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: rgba(209, 231, 249, 0.73);
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    min-width: 65em;
+    margin: auto;
+    padding: 35px 0px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "one one two five" "three four four five";
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .one {
+    grid-area: one;
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    color: white;
+  }
+  
+  .two {
+    grid-area: two;
+    background-color: rgb(134, 118, 118);
+    color: white;
+  }
+  
+  .three {
+    grid-area: three;
+    background-color: white;
+  }
+  
+  .four {
+    grid-area: four;
+    background-color: rgba(3, 3, 42, 0.888);
+    color: white;
+  }
+  
+  .five {
+    grid-area: five;
+    background-color: white;
+  }
+  
+  .grid img {
+    padding: 10px;
+    width: 1.75rem;
+    border-radius: 50%;
+  }
+  
+  .size {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  
+  .sizes {
+    font-size: smaller;
+    opacity: 0.8;
+  }
+  
+  .box p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .name {
+    font-size: smaller;
+    padding-top: 10px;
+  }
+  
+  .position {
+    font-size: smaller;
+    opacity: 0.5;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .flex img{
+    width: 60px;
+    height: 60px;
+  }
+  
+  .text-container {
+    flex: 1; 
+  }
+  
+  h2 {
+    margin: 0;
+    display: block;
+  }
+
+
+  
